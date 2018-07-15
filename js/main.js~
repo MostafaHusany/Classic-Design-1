@@ -1,0 +1,4 @@
+$(function() {
+	$tmp = $("<h1>").text("Hello, Wrold!!"); 
+	$("body").append($tmp);
+});

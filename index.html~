@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<!--
+		# Target & Plan
+		Review the main tools of FrontEnd Development
+		HTML, CSS, & jQuer
+	-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Classic Design</title>
+		<link href="css/main.css" rel="stylesheet"/>
+		<link href="css/normalize.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="test">
+			<span class="spin"></span>
+		</div>
+		
+	<script src="js/jQuery.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
