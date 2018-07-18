@@ -27,8 +27,8 @@
 				<ul class="links links-wraper">
 					<li class="active">Home</li>
 					<li data-scroll="#services">About</li>
+					<li data-scroll="#testimonial">Testimonials</li>
 					<li>Portofolio</li>
-					<li>Testimonials</li>
 					<li>Contact</li>
 				</ul>
 				<div class="links links-i">
@@ -75,11 +75,12 @@
 		
 		<!-- Start Services -->
 		<div id="services" class="services">
+			<!-- Start Container -->
 			<div class="container">
 				<h2 class="special-heading">Our Services</h2>
 
 				<div class="item">
-					<i class="fa fa-tablet fa-6x fa-w"></i>
+					<i class="fa fa-tablet fa-5x fa-w"></i>
 					<div class="info">
 						<h3>Responsive</h3>
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
@@ -125,8 +126,87 @@
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
 					</div>
 				</div>
+			
+				<div class="clearfix"></div>
+			</div>
+			<!-- End  Container -->
 		</div>
-		<!-- Start Services -->
+		<!-- End   Services -->
+
+		<div class="container"><hr class="separator"></div>
+
+		<!-- Start Our Team -->
+		<div class="our-team">
+			<!-- Start Container -->
+			<div class="container">
+			
+				<div class="box">
+					<h2 class="special-heading">Our Team</h2>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+				
+				<div class="box">
+					<div class="overlay">
+						<h4><span class="special-heading">Mostafa</span> Husany</h4>
+					</div>
+					<img src="images/001.jpg" alt="">
+				</div>
+				
+				<div class="box">
+					<div class="overlay">
+						<h4><span class="special-heading">Ahmad</span> Husany</h4>
+					</div>
+					<img src="images/002.jpg" alt="">
+				</div>
+				
+				<div class="box">
+					<div class="overlay">
+						<h4><span class="special-heading">Hazem</span> Husany</h4>
+					</div>
+					<img src="images/003.jpg" alt="">
+				</div>
+				
+				<div class="box">
+					<div class="overlay">
+						<h4><span class="special-heading">Mostafa</span> Husany</h4>
+					</div>
+					<img src="images/004.jpg" alt="">
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+			<!-- End Container -->
+		</div>
+		<!-- End   Our Team -->
+		
+		
+		
+		<!-- Start Testimonials -->
+		<div id="testimonial" class="testim">
+			<div class="t-overlay"></div>
+			<div class="container">
+				<h2><span class="special-heading">What</span> Our Clients Say</h2>
+				<ul class="t-fade-slider">
+					<li>
+						<q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</q>
+						<p>Mostafa</p>
+					</li>
+					<li>
+						<q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</q>
+						<p>Hazem</p>
+					</li>
+					<li class="active">
+						<q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</q>
+						<p>El-Saied</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- End   Testimonials -->
+		
+		
+		<!-- Start Our-Projects -->
+		<!-- End Our-Projects -->
 		
 	<script src="js/jQuery.js"></script>
 	<script src="js/jquery.bxslider.js"></script>

@@ -22,6 +22,14 @@ body {font-family: sans-serif; height: 2000px;}
 	bottom: -8px;
 	left: 3px;
 }
+
+	/*seprator used for hr*/
+.separator {
+	display: block;
+	/*margin:70px 0;*/
+	border: 1px solid #eee;
+	color:#eee;
+}
 /* End   My Framework */
 
 
@@ -108,6 +116,7 @@ body {font-family: sans-serif; height: 2000px;}
 	background-size: cover;
 	position: relative;
 }
+	.header h2 {font-weight: normal;}
 	.header .overlay {
 		position: absolute;
 		top: 0;
@@ -155,8 +164,8 @@ body {font-family: sans-serif; height: 2000px;}
 
 
 /* Start Services */
-.services {padding: 80px 0;}
-.services .special-heading:after {width: 40px; border-color: #444;}
+.services {padding: 80px 0; margin-bottom:;}
+	.services .special-heading:after {width: 40px; border-color: #444;}
 	.services h2 {margin-bottom: 50px; color: #444; font-weight: normal;}
 
 	.services .item {
@@ -201,3 +210,100 @@ body {font-family: sans-serif; height: 2000px;}
 }
 /* End   Services */
 
+
+
+/* Start Our Team*/
+.our-team {padding: 80px 0;}
+	.our-team .box {
+		float: left;
+		width: calc((98% - 35%) /4 );
+		position: relative;
+	}
+	.our-team .box:not(:nth-of-type(1)) {margin-left: 0.5%;}
+	.our-team .box:nth-of-type(1){width: 35%;}
+	.our-team .box:nth-of-type(1) h2 {margin-bottom: 20px;}
+	.our-team .box:nth-of-type(1) p {color: #666; line-height: 1.5;}
+		.our-team .box .overlay {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 98%;
+			width: 100%;
+			background: rgba(2, 169, 153, 0.7);
+			text-align: center;
+			line-height: 180px;
+			color: #fff;
+		}
+		.our-team .box .overlay h4 .special-heading:after {
+			border-color: #fff;
+			width: 35px;
+		}
+		.our-team .box:not(:nth-of-type(1)):hover .overlay {display: block;}
+		.our-team .box h2 {color: #444; font-weight: normal;}
+		.our-team .box .special-heading:after {width: 40px;border-color: #444;}
+		.our-team .box img {width: 100%;}
+
+@media (max-width: 900px) {
+	.our-team .box {
+		width:45%;
+		margin: 20px 2.5%;
+	}
+	.our-team .box:nth-of-type(1) {width:100% !important;}
+	.our-team .box .overlay h4.special-heading:after {
+		bottom: 70px;
+		left: 60px;
+		border-color: #fff;
+	}
+}
+	
+/* End   Our Team*/
+
+
+
+/* Start Testimonials */
+.testim {
+	background: url("../images/03.jpg");
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	color: #fff;
+	height: 400px;
+	text-align: center;
+	padding: 60px;
+}
+	.testim .container { position: relative; z-index: 2;}
+	.testim .t-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.testim h2{
+		font-weight: normal;
+		padding: 20px 0 70px;
+	}
+	.testim .special-heading:after {width: 40px; border-color: #fff;}
+	.testim q { 
+		display: block;
+		padding: 50px 20;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.testim p {padding-top: 70px; color:#02A999; }
+	
+		/*Slider blugin styling*/
+	.testim .bx-wrapper {
+		max-width: 100%;
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+	
+		/**/
+	.testim .t-fade-slider{padding: 0;margin: 0;list-style: none;}
+	.testim .t-fade-slider li {display: none}
+	.testim .t-fade-slider li.active {display: block;}
+/* End   Testimonials */

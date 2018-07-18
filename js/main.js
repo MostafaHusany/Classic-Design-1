@@ -79,4 +79,35 @@ $(function() {
 		
 	});
 	*/
+	
+	
+	// Testimonial Custmized Fade Slider, using self invoke slider
+	(function autoSlider() {
+		$(".t-fade-slider .active").each(function() {
+			if(!$(this).is(":last-child")){
+				$(this).delay(1000).fadeOut(1000, function(){
+					$(this).removeClass("active")
+							 .next()
+							 .fadeIn(1000)
+							 .addClass("active");
+					autoSlider();
+				});
+			} else {
+				$(this).delay(1000).removeClass("active").fadeOut(1000, function() {
+					$(".t-fade-slider li").eq(0)
+												 .fadeIn()
+												 .addClass("active");
+					autoSlider();
+				});
+				//autoSlider();
+			}
+		});
+	}());// end of the self envoked function
+	
+	// Testimonial slider with bxslider
+	/*var slider = $(".t-fade-slider").bxSlider({
+		pager:false,
+	});
+	slider.startAuto();
+	*/
 });
