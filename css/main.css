@@ -313,7 +313,6 @@ body {font-family: sans-serif; height: 2000px;}
 /* Start Our-Projects */
 .our-projects {
 	padding: 80px 0;
-	height: 2000px;
 }
 	.our-projects .container {background-color: ; overflow:hidden;}
 	
@@ -340,18 +339,20 @@ body {font-family: sans-serif; height: 2000px;}
 			}
 				
 			.our-projects .galler {}
-				.our-projects .galler .row {overflow: hidden;}
-					.our-projects .galler .row .project {
+				.our-projects .galler  {overflow: hidden;}
+					.our-projects .galler  .project {
 						width: 32%;
+						margin: 0.5%;
 						float: left;
 						margin-bottom: 10px;
 						position: relative;
 					}
-						.our-projects .galler .row .project:not(:nth-child(3)) {margin-right: 2%;}
-						.our-projects .galler .row .project img {width: 100%;}
+						//.our-projects .galler  .project:not(:nth-child(3)) {margin-right: 2%;}
+						
+						.our-projects .galler  .project img {width: 100%;}
 					
 					
-						.our-projects .galler .row .project .overlay {
+						.our-projects .galler  .project .overlay {
 							display: none;
 							position: absolute;
 							top: 0;
@@ -364,28 +365,28 @@ body {font-family: sans-serif; height: 2000px;}
 							color: #fff;
 							text-align: center;
 						}
-						.our-projects .galler .row .project:hover .overlay {display: block;} 
+						.our-projects .galler  .project:hover .overlay {display: block;} 
 							
-							.our-projects .galler .row .project .overlay span {
+							.our-projects .galler  .project .overlay span {
 								border: 2px solid #fff;
 								padding: 15px;
 								cursor: pointer;
 							}
-							.our-projects .galler .row .project .overlay .fa {
+							.our-projects .galler  .project .overlay .fa {
 								position: absolute;
 								bottom: 15px;
 								right: 15px;
 								font-size: 18px;
 							}
 @media (max-width: 1000px) {
-	.our-projects .galler .row .project {position: relative;}
-	.our-projects .galler .row .project:nth-of-type(1) {
+	.our-projects .galler  .project {position: relative;}
+	/*.our-projects .galler  .project:nth-of-type(1) {
 		width: 50%;
 		display: block;
 		margin: 10px auto;
 		float: none;
-	}
-	.our-projects .galler .row .project {
+	}*/
+	.our-projects .galler  .project {
 		display: inline-block;
 		width: 45%;
 		float: left;
@@ -393,3 +394,16 @@ body {font-family: sans-serif; height: 2000px;}
 
 }
 /* End   Our-Projects */
+
+
+
+
+
+/* Start Footer */
+.footer {
+	padding: 30px;
+	background-color: #555;
+	color:#ccc;
+	text-align: center;
+}
+/* End   Footer */

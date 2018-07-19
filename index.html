@@ -187,7 +187,7 @@
 			<div class="container">
 				<h2><span class="special-heading">What</span> Our Clients Say</h2>
 				<ul class="t-fade-slider">
-					<li>
+					<li class="active">
 						<q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</q>
 						<p>Mostafa</p>
 					</li>
@@ -195,7 +195,7 @@
 						<q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</q>
 						<p>Hazem</p>
 					</li>
-					<li class="active">
+					<li>
 						<q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr consetetur sadipscing elitr consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</q>
 						<p>El-Saied</p>
 					</li>
@@ -209,46 +209,55 @@
 		<div id="portofolio" class="our-projects">
 			<div class="container">
 				<h2 class="special-heading">Projects</h2>
-				<ul>
-					<li class="selected">All</li>
-					<li>Mobile</li>
-					<li>Coffee</li>
-					<li>Video</li>
-					<li>Fashion</li>
+				<ul class="controllers">
+					<li class="selected" data-show="all">All</li>
+					<li data-show=".mobil">Mobile</li>
+					<li data-show=".coffe">Coffee</li>
+					<li data-show=".vedio">Vedio</li>
+					<li data-show=".fashon">Fashion</li>
 				</ul>
+				
+				<!-- Start Gallary -->
 				<div class="galler">
-					<div class="row">
-						<div class="project">
+						<div class="project mobil">
 							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
 							<img src="images/projects/01.jpg" alt=""/>
 						</div>
-						<div class="project">
+						<div class="project coffe">
 							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
 							<img src="images/projects/02.jpg" alt=""/>
-						</div class="project">
-						<div class="project">
+						</div>
+						<div class="project coffe">
 							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
 							<img src="images/projects/03.jpg" alt=""/>
 						</div>
-					</div>
-					<div class="row">
-						<div class="project">
+					
+						<div class="project vedio">
 							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
 							<img src="images/projects/04.jpg" alt=""/>
 						</div>
-						<div class="project">
+						<div class="project fashon">
 							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
 							<img src="images/projects/02.jpg" alt=""/>
 						</div>
-						<div class="project">
+						<div class="project fashon">
 							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
 							<img src="images/projects/03.jpg" alt=""/>
 						</div>
-					</div>
 				</div>
+				<!-- End Gallery -->
 			</div>
 		</div>
 		<!-- End   Our-Projects -->
+		
+		
+		<!-- Start Footer -->
+		<div class="footer">
+			<div class="container">
+			<p>All Rights Recived &copy;CLSSIC 2018</p>
+			<div>
+		</div>
+		<!-- End   Footer -->
 		
 	<script src="js/jQuery.js"></script>
 	<script src="js/jquery.bxslider.js"></script>

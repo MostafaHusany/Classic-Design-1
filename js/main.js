@@ -22,14 +22,14 @@ $(function() {
 		
 		
 		// Gallery Overlay text content line-height
-		$(".our-projects .galler .row div .overlay").each(function() {
+		$(".our-projects .galler div .overlay").each(function() {
 			$(this).css("line-height", $(this).parent().height()+"px");
 		});
 	});
 	
 	
 	// Gallery Overlay text content line-height auto adjusting
-	$(".our-projects .galler .row div .overlay").each(function() {
+	$(".our-projects .galler div .overlay").each(function() {
 		$(this).css("line-height", $(this).parent().height()+"px");
 	});
 	
@@ -97,7 +97,7 @@ $(function() {
 	(function autoSlider() {
 		$(".t-fade-slider .active").each(function() {
 			if(!$(this).is(":last-child")){
-				$(this).delay(1000).fadeOut(1000, function(){
+				$(this).delay(3000).fadeOut(1000, function(){
 					$(this).removeClass("active")
 							 .next()
 							 .fadeIn(1000)
@@ -105,7 +105,7 @@ $(function() {
 					autoSlider();
 				});
 			} else {
-				$(this).delay(1000).removeClass("active").fadeOut(1000, function() {
+				$(this).delay(3000).removeClass("active").fadeOut(1000, function() {
 					$(".t-fade-slider li").eq(0)
 												 .fadeIn()
 												 .addClass("active");
@@ -123,6 +123,21 @@ $(function() {
 	slider.startAuto();
 	*/
 	
-	
+	// Our-project
+	$(".our-projects .controllers li").on("click", function() {
+		// Active the button selected
+		$(this).addClass("selected").siblings().removeClass("selected");
+		
+		// Show related category
+		var cat = $(this).data("show");
+		if(cat == "all") {
+			$(".galler .project").show(1000); 
+			console.log($(".gallre div"));
+		} else {
+			$(cat).siblings().hide(1000);
+			$(cat).show(1000);
+		}
+	});
+		
 	
 });
