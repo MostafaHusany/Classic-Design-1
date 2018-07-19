@@ -19,6 +19,18 @@ $(function() {
 			var height =  ($(window).height() - $(".bxslider li").height())/2;
 			$(this).css("paddingTop", height);
 		});
+		
+		
+		// Gallery Overlay text content line-height
+		$(".our-projects .galler .row div .overlay").each(function() {
+			$(this).css("line-height", $(this).parent().height()+"px");
+		});
+	});
+	
+	
+	// Gallery Overlay text content line-height
+	$(".our-projects .galler .row div .overlay").each(function() {
+		$(this).css("line-height", $(this).parent().height()+"px");
 	});
 	
 	// Header Resizing
@@ -85,7 +97,7 @@ $(function() {
 	(function autoSlider() {
 		$(".t-fade-slider .active").each(function() {
 			if(!$(this).is(":last-child")){
-				$(this).delay(3000).fadeOut(1000, function(){
+				$(this).delay(1000).fadeOut(1000, function(){
 					$(this).removeClass("active")
 							 .next()
 							 .fadeIn(1000)
@@ -93,7 +105,7 @@ $(function() {
 					autoSlider();
 				});
 			} else {
-				$(this).delay(3000).removeClass("active").fadeOut(1000, function() {
+				$(this).delay(1000).removeClass("active").fadeOut(1000, function() {
 					$(".t-fade-slider li").eq(0)
 												 .fadeIn()
 												 .addClass("active");
@@ -110,4 +122,7 @@ $(function() {
 	});
 	slider.startAuto();
 	*/
+	
+	
+	
 });

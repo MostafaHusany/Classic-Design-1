@@ -19,6 +19,18 @@ $(function() {
 			var height =  ($(window).height() - $(".bxslider li").height())/2;
 			$(this).css("paddingTop", height);
 		});
+		
+		
+		// Gallery Overlay text content line-height
+		$(".our-projects .galler .row div .overlay").each(function() {
+			$(this).css("line-height", $(this).parent().height()+"px");
+		});
+	});
+	
+	
+	// Gallery Overlay text content line-height auto adjusting
+	$(".our-projects .galler .row div .overlay").each(function() {
+		$(this).css("line-height", $(this).parent().height()+"px");
 	});
 	
 	// Header Resizing
@@ -110,4 +122,7 @@ $(function() {
 	});
 	slider.startAuto();
 	*/
+	
+	
+	
 });

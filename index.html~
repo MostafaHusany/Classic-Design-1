@@ -28,7 +28,7 @@
 					<li class="active">Home</li>
 					<li data-scroll="#services">About</li>
 					<li data-scroll="#testimonial">Testimonials</li>
-					<li>Portofolio</li>
+					<li data-scroll="#portofolio">Portofolio</li>
 					<li>Contact</li>
 				</ul>
 				<div class="links links-i">
@@ -206,7 +206,49 @@
 		
 		
 		<!-- Start Our-Projects -->
-		<!-- End Our-Projects -->
+		<div id="portofolio" class="our-projects">
+			<div class="container">
+				<h2 class="special-heading">Projects</h2>
+				<ul>
+					<li class="selected">All</li>
+					<li>Mobile</li>
+					<li>Coffee</li>
+					<li>Video</li>
+					<li>Fashion</li>
+				</ul>
+				<div class="galler">
+					<div class="row">
+						<div class="project">
+							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
+							<img src="images/projects/01.jpg" alt=""/>
+						</div>
+						<div class="project">
+							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
+							<img src="images/projects/02.jpg" alt=""/>
+						</div class="project">
+						<div class="project">
+							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
+							<img src="images/projects/03.jpg" alt=""/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="project">
+							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
+							<img src="images/projects/04.jpg" alt=""/>
+						</div>
+						<div class="project">
+							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
+							<img src="images/projects/05.jpg" alt=""/>
+						</div>
+						<div class="project">
+							<div class="overlay"><span>View More</span> <i class="fa fa-heart-o"> 14</i></div>
+							<img src="images/projects/03.jpg" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End   Our-Projects -->
 		
 	<script src="js/jQuery.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
